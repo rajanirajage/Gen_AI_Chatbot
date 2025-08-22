@@ -1,5 +1,5 @@
 ## Structure of Project
-Gen_AI/
+# Gen_AI
 │── data/
 │   ├── financial_risk.pdf
 │   ├── operations risk.pdf
@@ -19,14 +19,28 @@ Gen_AI/
 # make sure you have Python 3.10.5 version for this project in your system 
 # as per below comand run the file in terminal
 
-#bash
+# bash
 
 python -m venv venv
+
 venv\Scripts\activate
+
 pip install --upgrade pip setuptools wheel
+
 pip install -r requirements.txt
-python gen_ai.py
-python gen_ai_chatbot.py
-# Should install scikit-learn quickly
 
 python gen_ai.py
+
+python gen_ai_chatbot.py
+
+python gen_ai.py
+
+# Ask your questions
+
+Open your browser at http://127.0.0.1:5000
+
+Example queries:
+
+“What are RBI’s operational risk guidelines?”
+
+“How is financial risk governance defined?”
