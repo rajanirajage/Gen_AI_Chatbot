@@ -1,8 +1,8 @@
 ## Structure of Project
 # Gen_AI
 │── data/               
-│   ├── financial_risk.pdf
-│   ├── operations risk.pdf
+│   ├── financial_risk.pdf    
+│   ├── operations risk.pdf       
 │── Models/
 │   ├── prompt_template
 │── Template /
