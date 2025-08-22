@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RBI Risk Chatbot</title>
+</head>
+<body>
+  <h2>RBI Risk Chatbot</h2>
+  <input id="question" type="text" placeholder="Ask your question..." />
+  <button onclick="ask()">Ask</button>
+  <p id="answer"></p>
+
+  <script>
+    async function ask() {
+      let query = document.getElementById("question").value;
+      let response = await fetch("/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({query}),
+      });
+      let data = await response.json();
+      document.getElementById("answer").innerText = data.answer;
+    }
+  </script>
+</body>
+</html>
