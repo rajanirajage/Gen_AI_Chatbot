@@ -1,6 +1,6 @@
 ## Structure of Project
 # Gen_AI
-│── data/
+│── data/               
 │   ├── financial_risk.pdf
 │   ├── operations risk.pdf
 │── Models/
